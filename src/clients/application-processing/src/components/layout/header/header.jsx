@@ -5,10 +5,8 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <nav class="navbar navbar-dark bg-danger">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+          <a className="navbar-brand">Navbar</a>
           <button
             className="navbar-toggler"
             type="button"
@@ -29,17 +27,12 @@ class Header extends Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Features
+                  Applicants
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#">
-                  Disabled
+                  About
                 </a>
               </li>
             </ul>
