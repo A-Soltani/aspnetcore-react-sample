@@ -7,7 +7,6 @@ import Main from "./components/layout/main/main";
 function App() {
   return (
     <div className="App">
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
       <Header />
       <Main />
       <Footer />
