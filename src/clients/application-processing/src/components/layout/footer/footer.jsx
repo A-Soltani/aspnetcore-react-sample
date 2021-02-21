@@ -4,11 +4,11 @@ class Footer extends Component {
   state = {};
   render() {
     return (
-      <footer class="bg-light text-center text-lg-start">
-        <div class="text-center p-3">
+      <footer class="bg-dark text-center text-white">
+        <div class="text-center text-white p-3">
           © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">
-            MDBootstrap.com
+          <a class="text-white" href="#">
+            ap.com
           </a>
         </div>
       </footer>
