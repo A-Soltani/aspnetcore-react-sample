@@ -32,6 +32,18 @@ class Applicant extends Component {
     ],
   };
 
+  handelDeleteApplicant = (applicantId) => {
+    const applicantIndex = this.state.applicants.findIndex(
+      (a) => a.id === applicantId
+    );
+    if (applicantId === -1)
+      console.error(`There is no applicant with id ${applicantId}`);
+    else
+      this.setState({
+        applicant: this.state.applicants.splice(applicantIndex, 1),
+      });
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -60,9 +72,12 @@ class Applicant extends Component {
                   <a className="btn btn-primary btn-sm">
                     <FontAwesomeIcon icon={faEdit} />
                   </a>
-                  <a className="btn btn-danger btn-sm">
+                  <button
+                    onClick={() => this.handelDeleteApplicant(applicant.id)}
+                    className="btn btn-danger btn-sm"
+                  >
                     <FontAwesomeIcon icon={faTrash} />
-                  </a>
+                  </button>
                 </td>
               </tr>
             ))}
